@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "HealthBridge",
+    "slug": "healthbridge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow HealthBridge to access your camera to scan medicine barcodes."
+        }
+      ]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan medicine barcodes.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice commands.",
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to find nearby healthcare facilities."
+      }
+    }
+  }
+}
